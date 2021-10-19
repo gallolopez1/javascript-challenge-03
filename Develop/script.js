@@ -97,8 +97,14 @@ function writePassword() {
 }
 
 function generatePassword() {
+    var tempPassword = [];
     var length = getUserOptions();
     var options = getPasswordAttributes();
+
+    while (tempPassword.length != length) {
+        tempPassword.push(randomCharacter)
+    }
+
     // console.log(length);
     // console.log(options.hasSpecial);
     // console.log(options.hasLowerCase);
@@ -132,10 +138,11 @@ function getUserOptions() {
 
 function getPasswordAttributes() {
     var options = {
-            hasSpecial: window.confirm("Would you like to use special characters?"),
+            combineArray: [],
             hasLowerCase: window.confirm("Would you like to use lower case letters?"),
             hasUpperCase: window.confirm("Would you like to use upper case letters?"),
-            hasNumbers: window.confirm("Would you like to use numbers?")
+            hasNumbers: window.confirm("Would you like to use numbers?"),
+            hasSpecial: window.confirm("Would you like to use special characters?")
         }
         // var hasSpecial = window.confirm("Would you like to use special characters?");
         // var hasLowerCase = window.confirm("Would you like to use lower case letters?");
@@ -147,7 +154,25 @@ function getPasswordAttributes() {
         window.alert("At least one of the values must be true.");
         return getOptions();
     }
+
+    if (options.hasLowerCase) {
+        options.combineArray = options.combineArray.concat(lowerCasedCharacters);
+    }
+    if (options.hasUpperCase) {
+        options.combineArray = options.combineArray.concat(upperCasedCharacters);
+    }
+    if (options.hasNumbers) {
+        options.combineArray = options.combineArray.concat(numericCharacters);
+    }
+    if (options.hasSpecial) {
+        options.combineArray = options.combineArray.concat(specialCharacters);
+    }
     return options;
+}
+
+function randomCharacter(array) {
+    return array[Math.floor(Math.random() * array.length)];
+
 }
 
 
