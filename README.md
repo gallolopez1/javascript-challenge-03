@@ -2,7 +2,7 @@
 
 ## Links
 
-* 🌎 [Live Github Page] ("#")
+* 🌎 [Live Github Page] ("https://gallolopez1.github.io/javascript-challenge-03/")
 * 💾 [Repo (here)] (https://github.com/gallolopez1/javascript-challenge-03)
 
 # <u> Challenge instructions:</u>
