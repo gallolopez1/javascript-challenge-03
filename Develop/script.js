@@ -172,9 +172,10 @@ function getPasswordAttributes() {
         // var hasNumbers = window.confirm("Would you like to use numbers?");
 
     //! equals to not or false
-    if (!options.hasSpecial && !options.hasLowercase && !options.hasUpperCase && !options.hasNumbers) {
+    if (!options.hasLowerCase && !options.hasUpperCase && !options.hasNumbers && !options.hasSpecial) {
+        // if (options.hasSpecial === false && options.hasLowercase === false && options.hasUpperCase === false && options.hasNumbers === false) {
         window.alert("At least one of the values must be true.");
-        return getOptions();
+        return getPasswordAttributes();
     }
 
     if (options.hasLowerCase) {
