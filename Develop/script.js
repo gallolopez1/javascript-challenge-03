@@ -97,19 +97,40 @@ function writePassword() {
 }
 
 function generatePassword() {
-    var tempPassword = [];
+
     var length = getUserOptions();
     var options = getPasswordAttributes();
+    var password = function() {
+        //push random character until it meets length condition
+        var tempPassword = [];
+        while (tempPassword.length != length) {
+            tempPassword.push(randomCharacter(options.combineArray));
+        }
+        if (options.hasLowerCase) {
+            if (!tempPassword.some(x => lowerCasedCharacters.indexOf(x) > -1)) {
+                return password();
+            }
+        }
+        if (options.hasUpperCase) {
+            if (!tempPassword.some(x => upperCasedCharacters.indexOf(x) > -1)) {
+                return password();
+            }
+        }
+        if (options.hasNumbers) {
+            if (!tempPassword.some(x => numericCharacters.indexOf(x) > -1)) {
+                return password();
+            }
+        }
+        if (options.hasSpecial) {
+            if (!tempPassword.some(x => specialCharacters.indexOf(x) > -1)) {
+                return password();
+            }
+        }
+        return tempPassword.join('');
 
-    while (tempPassword.length != length) {
-        tempPassword.push(randomCharacter)
     }
 
-    // console.log(length);
-    // console.log(options.hasSpecial);
-    // console.log(options.hasLowerCase);
-    // console.log(options.hasUpperCase);
-    // console.log(options.hasNumbers);
+    return password();
 
     //generate password
 
@@ -132,11 +153,12 @@ function getUserOptions() {
         window.alert("The length must be at least 8 characters and no more than 128 characters! Please try again.");
         return getUserOptions();
     }
-    return length;
+    return parseInt(length);
 }
 
 
 function getPasswordAttributes() {
+    //create array
     var options = {
             combineArray: [],
             hasLowerCase: window.confirm("Would you like to use lower case letters?"),
@@ -169,7 +191,7 @@ function getPasswordAttributes() {
     }
     return options;
 }
-
+//create a function to randomize with Math.random and add Math.floor to round number
 function randomCharacter(array) {
     return array[Math.floor(Math.random() * array.length)];
 
