@@ -12,23 +12,23 @@ Major shout-out to my friend <b>Andrew Yu</b> for his patience and knowledge in 
 
 ### Step 1:
 
-![step1](Assets\images\step1.PNG) 
+![step1](ASsets\images\step1.PNG) 
 
 ### Step 2:
 
-![step2](Assets\images\step2.PNG)
+![step2](ASsets\images\step2.PNG)
 
 ### Step 3 (provide a valid answer):
 
-![step3](Assets\images\step3.PNG)
+![step3](ASsets\images\step3.PNG)
 
 ### Step 4 (define password values):
 
-![step4](Assets\images\step4.PNG)
+![step4](ASsets\images\step4.PNG)
 
 ### Step 5 (get password):
 
-![step5](Assets\images\step5.PNG)
+![step5](ASsets\images\step5.PNG)
 
 <br>
 
