@@ -10,25 +10,25 @@ Major shout-out to my friend <b>Andrew Yu</b> for his patience and knowledge in 
 
 # <u> How to use the password generator:</u>
 
-###Step 1:
+### Step 1:
 
-![step1](Assets\images\Step 1.PNG)
+![step1](Assets\images\step1.PNG) 
 
-###Step 2:
+### Step 2:
 
-![step2](Assets\images\Step 2.PNG)
+![step2](Assets\images\step2.PNG)
 
-###Step 3 (provide a valid answer):
+### Step 3 (provide a valid answer):
 
-![step3](Assets\images\Step 3 - provide a proper value.PNG)
+![step3](Assets\images\step3.PNG)
 
-###Step 4 (define password values):
+### Step 4 (define password values):
 
-![step4](Assets\images\Step 4 - define password values.PNG)
+![step4](Assets\images\step4.PNG)
 
-###Step 5 (get password):
+### Step 5 (get password):
 
-![step5](Assets\images\Step 5 - get password.PNG)
+![step5](Assets\images\step5.PNG)
 
 <br>
 
