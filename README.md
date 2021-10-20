@@ -5,6 +5,33 @@
 * 🌎 [Live Github Page] ("https://gallolopez1.github.io/javascript-challenge-03/")
 * 💾 [Repo (here)] (https://github.com/gallolopez1/javascript-challenge-03)
 
+# <u> Credits:</u>
+Major shout-out to my friend <b>Andrew Yu</b> for his patience and knowledge in helping me navigate through this challenge! Thanks to him, I was able to understand the logic behind the code and that there is no "one" way of coding or solving a problem. 
+
+# <u> How to use the password generator:</u>
+
+###Step 1:
+
+![step1](Assets\images\Step 1.PNG)
+
+###Step 2:
+
+![step2](Assets\images\Step 2.PNG)
+
+###Step 3 (provide a valid answer):
+
+![step3](Assets\images\Step 3 - provide a proper value.PNG)
+
+###Step 4 (define password values):
+
+![step4](Assets\images\Step 4 - define password values.PNG)
+
+###Step 5 (get password):
+
+![step5](Assets\images\Step 5 - get password.PNG)
+
+<br>
+
 # <u> Challenge instructions:</u>
 
 Create an application that generates a random password based on user-selected criteria. The app runs in the browser and features dynamically updated HTML and CSS powered by your JavaScript code. It has a clean and polished user interface and is responsive, which ensures that it adapts to multiple screen sizes.
@@ -37,20 +64,4 @@ WHEN all prompts are answered
 THEN a password is generated that matches the selected criteria
 WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
-```
-
-The following image demonstrates the application functionality:
-
-![An app window with the label Password Generator, an input field labeled Your Secure Password, and a Generate Password button.](./Assets/03-javascript-homework-demo.png)
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
-- - -
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
 
